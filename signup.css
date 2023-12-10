@@ -18,22 +18,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-.top a #logo {
+.top > a > #logo {
   margin-left: 20px;
   margin-right: 20px;
   list-style: none;
 }
-.top ul li {
+.top > ul > li {
   margin-left: 20px;
   margin-right: 20px;
   list-style: none;
 }
-.top ul li a {
+.top > ul > li > a {
   color: rgb(67, 67, 67);
   transition: 0.5s;
   text-decoration: none;
 }
-.top ul li a:hover {
+.top > ul > li > a:hover {
   color: rgb(0, 0, 0);
   font-size: 17px;
 }
@@ -44,17 +44,17 @@ body {
   margin-top: 15px;
 }
 
-header div ul {
+header > div > ul {
   display: flex;
   gap: 15px;
 }
-header div ul li {
+header > div > ul > li {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   list-style: none;
   display: flex;
 }
-header div ul li a {
+header > div > ul > li > a {
   color: black;
   text-decoration: none;
 }
@@ -74,14 +74,14 @@ section {
   display: flex;
   box-shadow: 10px 10px 5px 5px rgb(51, 59, 62);
 }
-.sign .img1 {
+.sign > .img1 {
   width: 320px;
   height: 650px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   background-image: url(photos/gif.gif);
 }
-.sign .img1 h1 {
+.sign > .img1 > h1 {
   color: #ffffff;
   font-size: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -90,7 +90,7 @@ section {
   justify-content: center;
   margin-top: 60px;
 }
-.sign .img1 .icons i {
+.sign > .img1 > .icons > i {
   font-size: 40px;
   cursor: pointer;
 }
@@ -110,42 +110,47 @@ section {
   color: rgb(255, 0, 0);
 }
 
-.input {
-  margin-top: 150px;
+.input > form {
+  margin-top: -90px;
 }
-.input form label {
+.input > form > label {
   margin-left: 30px;
+  display: flex;
+  margin-top: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(92, 153, 197);
   font-size: 25px;
   font-weight: 700;
 }
-.input form input {
+.input > form > input {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 12px;
+  margin-top: 15px;
   width: 270px;
   height: 40px;
   border-radius: 5px;
   border: 1px solid rgb(94, 94, 94);
   padding: 15px;
-  background-color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
-.reg {
+.sup {
   display: flex;
   justify-content: end;
   align-items: flex-start;
-  margin-top: -150px;
   gap: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 15px;
   margin-bottom: 150px;
 }
-.reg #in {
+.sup > #in {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sup > #up {
   background-color: rgb(174, 223, 255);
   height: 60px;
   width: 100px;
@@ -155,17 +160,10 @@ section {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.reg #up {
-  height: 60px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 button {
@@ -184,8 +182,11 @@ button {
   font-weight: 700;
   font-size: 25px;
 }
+button:hover {
+  color: bisque;
+}
 
-#mess a i {
+#mess > a > i {
   font-size: 50px;
   color: rgb(0, 140, 255);
   position: fixed;
@@ -195,4 +196,4 @@ button {
   margin-bottom: 90px;
 }
 
-/*# sourceMappingURL=signin.css.map */
+/*# sourceMappingURL=signup.css.map */
