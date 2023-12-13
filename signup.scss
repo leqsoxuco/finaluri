@@ -19,7 +19,7 @@ section {
   margin-top: 40px;
   border-radius: 20px;
   display: flex;
-  box-shadow: 10px 10px 5px 5px rgb(51, 59, 62);
+  box-shadow: 10px 10px 5px 5px rgba(107, 120, 125, 0.48);
   .img1 {
     width: 320px;
     height: 650px;
@@ -54,6 +54,9 @@ section {
 }
 .fa-google {
   color: rgb(255, 0, 0);
+}
+.fa-x-twitter{
+  color: black;
 }
 .input {
   form {
@@ -133,7 +136,7 @@ button {
   a {
     i {
       font-size: 50px;
-      color: rgb(86, 126, 159);
+      color: rgb(44, 67, 242);
       position: fixed;
       right: 0px;
       margin-right: 50px;

@@ -67,6 +67,10 @@ section {
   color: rgb(255, 0, 0);
 }
 
+.fa-x-twitter {
+  color: black;
+}
+
 .input {
   margin-top: 150px;
 }
