@@ -14,6 +14,7 @@
     <title>signin</title>
   </head>
   <body>
+    <div id="preloader"></div>
     <section>
       <div class="sign">
         <div class="img1">
@@ -40,10 +41,28 @@
           </form>
           <button><a href="signin.html">SIGN UP</a></button>
         </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/yJg-Y5byMMw?si=aTHwGA4yWxdGUNoX"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
     <aside id="mess">
-      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-messenger"></i></a> 
-     </aside>
+      <a href="https://www.facebook.com/"
+        ><i class="fa-brands fa-facebook-messenger"></i
+      ></a>
+    </aside>
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>

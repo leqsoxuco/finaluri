@@ -10,53 +10,10 @@ body {
   background-repeat: no-repeat;
 }
 
-.top {
-  width: 100%;
-  height: 60px;
-  background-color: rgb(255, 204, 142);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.top a #logo {
-  margin-left: 20px;
-  margin-right: 20px;
-  list-style: none;
-}
-.top ul li {
-  margin-left: 20px;
-  margin-right: 20px;
-  list-style: none;
-}
-.top ul li a {
-  color: rgb(67, 67, 67);
-  transition: 0.5s;
-  text-decoration: none;
-}
-.top ul li a:hover {
-  color: rgb(0, 0, 0);
-  font-size: 17px;
-}
-
 #logo {
   width: 70px;
   height: 70px;
   margin-top: 15px;
-}
-
-header div ul {
-  display: flex;
-  gap: 15px;
-}
-header div ul li {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  list-style: none;
-  display: flex;
-}
-header div ul li a {
-  color: black;
-  text-decoration: none;
 }
 
 section {
@@ -68,11 +25,11 @@ section {
 .sign {
   width: 650px;
   height: 650px;
-  background-color: rgb(255, 186, 102);
+  background-color: rgba(11, 37, 56, 0.8);
   margin-top: 40px;
   border-radius: 20px;
   display: flex;
-  box-shadow: 10px 10px 5px 5px rgb(51, 59, 62);
+  box-shadow: 10px 10px 5px 5px rgba(107, 120, 125, 0.48);
 }
 .sign .img1 {
   width: 320px;
@@ -116,7 +73,7 @@ section {
 .input form label {
   margin-left: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(92, 153, 197);
+  color: #ffffff;
   font-size: 25px;
   font-weight: 700;
 }
@@ -130,9 +87,9 @@ section {
   width: 270px;
   height: 40px;
   border-radius: 5px;
-  border: 1px solid rgb(94, 94, 94);
+  border: 1px solid rgb(255, 255, 255);
   padding: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(83, 73, 73, 0.712);
 }
 
 .reg {
@@ -146,7 +103,7 @@ section {
   margin-bottom: 150px;
 }
 .reg #in {
-  background-color: rgb(174, 223, 255);
+  background-color: rgba(106, 129, 143, 0.566);
   height: 60px;
   width: 100px;
   display: flex;
@@ -179,15 +136,23 @@ button {
   border: 0px;
   margin-left: 65px;
   margin-top: 40px;
-  background-color: rgb(174, 223, 255);
+  background-color: rgba(255, 255, 255, 0.386);
   cursor: pointer;
   font-weight: 700;
   font-size: 25px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.3s;
+}
+button a {
+  color: rgb(255, 255, 255);
+}
+button:hover {
+  background-color: rgba(11, 37, 56, 0.8);
 }
 
 #mess a i {
   font-size: 50px;
-  color: rgb(0, 140, 255);
+  color: rgb(44, 67, 242);
   position: fixed;
   right: 0px;
   margin-right: 50px;
@@ -195,4 +160,23 @@ button {
   margin-bottom: 90px;
 }
 
-/*# sourceMappingURL=signin.css.map */
+::-moz-placeholder {
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+#preloader {
+  background: #ffffff url(photos/LOADING.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
+iframe {
+  display: none;
+}/*# sourceMappingURL=signin.css.map */
